@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+
+    <!-- Linking CSS file -->
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="todo_app">
+            <!-- Heading and icon -->
+            <h2>To-Do List</h2>
+
+            <!-- Input and Add button -->
+            <div class="row">
+                <label for="input_box"></label>
+                <input id="input_box" type="text" placeholder="Enter Your Text">
+                <button onclick="addTask()">ENTER</button>
+            </div>
+            <!-- List of tasks -->
+            <ul id="list_container">
+                <!-- Task items will be dynamically added here -->
+            </ul>
+            <!-- Clear All button -->
+            <button class="clear_all" id="clearAllButton" onclick="clearAll()">
+                Clear All
+            </button>
+        </div>
+    </div>
+
+    <!-- Linking JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;600;700&display=swap");
+
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Poppins", sans-serif;
+}
+
+/* Setting a background color for the body */
+body {
+  background-color: #f7f9fc;
+}
+
+/* Styling for the container holding the to-do app */
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #f7f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the to-do app itself */
+.todo_app {
+  width: 100%;
+  max-width: 540px;
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Styling for the heading */
+.todo_app h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #3498db; /* Using a blue color for the heading */
+}
+
+
+/* Styling for the input row */
+.row {
+  display: flex;
+  align-items: center;
+  background-color: #edeef0;
+  border-radius: 25px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+/* Styling for the input box */
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Styling for buttons */
+button {
+  border: none;
+  outline: none;
+  padding: 12px 30px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-left: 10px;
+}
+
+/* Styling for list items */
+ul li {
+  list-style: none;
+  font-size: 16px;
+  padding: 12px 8px 12px 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Styling for unchecked list item icons */
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-image: url("images/unchecked.png");
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 10px;
+}
+
+/* Styling for checked list items */
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+/* Styling for checked list item icons */
+ul li.checked::before {
+  background-image: url("images/checked.png");
+}
+
+/* Styling for the delete button in list items */
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  color: #555;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Styling for the delete button on hover */
+ul li span:hover {
+  background: #edeef0;
+  border-radius: 50%;
+}
+
+/* Style for the "Clear All" button */
+.clear_all {
+  border: none;
+  outline: none;
+  padding: 12px 30px;
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin: 20px auto; /* Center the button */
+  display: block; /* Make the button a block element for centering */
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for the "Clear All" button on hover */
+.clear_all:hover {
+  background-color: #c0392b;
+}
